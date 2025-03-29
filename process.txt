@@ -1,0 +1,17 @@
+[ message.txt ]
+      ↓
+[ Software loads to DDR3 ]
+      ↓
+[ Hardware reads from DDR3 via DMA ]
+      ↓
+[ SHA-3 Preprocessor ]
+   - Buffers data
+   - Applies padding
+   - Splits into 1088-bit blocks
+      ↓
+[ SHA-3 Core ]
+   - Absorbs block
+   - Runs 24 rounds
+   - Squeezes result
+      ↓
+[ 256-bit hash output ]
